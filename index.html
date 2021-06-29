@@ -1,52 +1,332 @@
-<!DOCTYPE html
-	PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-	<title>HTML Template</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<style>
-		body {
-			width: 100% !important;
-			-webkit-text-size-adjust: 100%;
-			-ms-text-size-adjust: 100%;
-			margin: 0;
-			padding: 0;
-			line-height: 100%;
-		}
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>HTML Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <style>
+            body {
+                width: 100% !important;
+                -webkit-text-size-adjust: 100%;
+                -ms-text-size-adjust: 100%;
+                margin: 0;
+                padding: 0;
+                line-height: 100%;
+                background-color: black;
+            }
 
-		[style*="Open Sans"] {font-family: 'Open Sans', arial, sans-serif !important;}
+            [style*="Verdana"] {
+                font-family: "Verdana", arial, sans-serif !important;
+            }
 
-		img {
-			outline: none;
-			text-decoration: none;
-			border:none;
-			-ms-interpolation-mode: bicubic;
-			max-width: 100%!important;
-			margin: 0;
-			padding: 0;
-			display: block;
-		}
+            img {
+                outline: none;
+                text-decoration: none;
+                border: none;
+                -ms-interpolation-mode: bicubic;
+                max-width: 100% !important;
+                margin: 0;
+                padding: 0;
+                display: block;
+            }
 
-		table td {
-			border-collapse: collapse;
-		}
+            table td {
+                border-collapse: collapse;
+            }
 
-		table {
-			border-collapse: collapse;
-			mso-table-lspace: 0pt;
-			mso-table-rspace: 0pt;
-		}
-	</style>
-</head>
+            table {
+                border-collapse: collapse;
+                mso-table-lspace: 0pt;
+                mso-table-rspace: 0pt;
+            }
 
-<body style="margin: 0; padding: 0;">
-	<div style="font-size:0px;font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">preheader</div>
-	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ededed">
-		<tr>
-			<td></td>
-		</tr>
-	</table>
-</body>
+            .header-td {
+                padding-top: 40px;
+                padding-bottom: 40px;
+            }
 
+            .content-td {
+                padding-top: 20px;
+                padding-bottom: 40px;
+            }
+
+            .content-td h3 {
+                font-weight: bold;
+                font-size: 32px;
+                line-height: 36px;
+                letter-spacing: -0.04em;
+
+                color: #604c99;
+
+                margin-top: 0;
+                margin-bottom: 0;
+            }
+
+            .content-td p {
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 20px;
+
+                color: #6a6561;
+
+                margin-bottom: 24px;
+            }
+
+            .content-td a {
+                font-weight: bold;
+                font-size: 18px;
+                text-align: center;
+
+                color: #ffffff;
+                text-decoration: none;
+
+                display: inline-block;
+            }
+
+            .content-td span {
+                display: block;
+                padding-top: 24px;
+                padding-bottom: 24px;
+                padding-left: 40px;
+                padding-right: 40px;
+                background: #604c99;
+                border-radius: 2px;
+            }
+
+            .second-content-td {
+                border-top: 1px solid #edecec;
+                padding-top: 8px;
+                padding-bottom: 40px;
+            }
+
+            .second-content-td a {
+                font-weight: bold;
+                font-size: 14px;
+                letter-spacing: -0.02em;
+                text-decoration: none;
+
+                color: #604c99;
+            }
+
+            .footer-td {
+                padding-top: 40px;
+            }
+
+            .copy-td {
+                padding-top: 40px;
+            }
+
+            .copy-td p {
+                font-size: 10px;
+                line-height: 10px;
+                color: #b5b2b0;
+
+                display: inline-block;
+            }
+
+            .copy-td a {
+                font-weight: bold;
+                font-size: 10px;
+                text-decoration: none;
+
+                color: #604c99;
+            }
+
+            @media (max-width: 560px) {
+                .table-680 {
+                    width: 320px !important;
+                }
+
+                .table-480 {
+                    width: 272px !important;
+                }
+            }
+        </style>
+    </head>
+
+    <body style="margin: 0; padding: 0">
+        <div
+            style="
+                font-size: 0px;
+                font-color: #ffffff;
+                opacity: 0;
+                visibility: hidden;
+                width: 0;
+                height: 0;
+                display: none;
+            "
+        >
+            preheader
+        </div>
+        <table
+            class="main-table table-680"
+            cellpadding="0"
+            cellspacing="0"
+            width="680"
+            align="center"
+        >
+            <tr>
+                <td align="center" bgcolor="#ffffff">
+                    <table
+                        class="table-480"
+                        cellpadding="0"
+                        cellspacing="0"
+                        width="480"
+                    >
+                        <tr>
+                            <td class="header-td" align="left">
+                                <img src="./static/logo.png" alt="logo" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="content-td">
+                                <table
+                                    class="content-table"
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    style="
+                                        font-family: Arial, Helvetica,
+                                            sans-serif, Verdana;
+                                    "
+                                >
+                                    <tr>
+                                        <td>
+                                            <h3>Main call to action here.</h3>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <p>
+                                                Lorem ipsum dolor sit amet,
+                                                consectetur adipiscing elit.
+                                                Quis convallis habitant blandit
+                                                elit. Augue ultrices mauris cras
+                                                id molestie semper diam turpis.
+                                                Non pellentesque ut enim non.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="left">
+                                            <a
+                                                href="#"
+                                                style="
+                                                    font-family: Arial,
+                                                        Helvetica, sans-serif,
+                                                        Verdana;
+                                                "
+                                            >
+                                                <span>Action Button</span>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="second-content-td">
+                                <a
+                                    href="#"
+                                    style="
+                                        font-family: Arial, Helvetica,
+                                            sans-serif, Verdana;
+                                    "
+                                >
+                                    Secondary Action >>
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="footer-td">
+                                <table
+                                    cellpadding="0"
+                                    cellspacing="0"
+                                    class="table-480"
+                                    width="480"
+                                >
+                                    <tr>
+                                        <td align="left">
+                                            <img
+                                                src="./static/logo-footer.png"
+                                                alt="logo"
+                                            />
+                                        </td>
+                                        <td class="menu-td" align="right">
+                                            <table
+                                                cellpadding="0"
+                                                cellspacing="0"
+                                                width="129"
+                                            >
+                                                <tr>
+                                                    <td align="center">
+                                                        <a
+                                                            href="#"
+                                                            title="Telegram"
+                                                        >
+                                                            <img
+                                                                src="./static/telegram.png"
+                                                                alt="Telegram"
+                                                            />
+                                                        </a>
+                                                    </td>
+                                                    <td align="center">
+                                                        <a
+                                                            href="#"
+                                                            title="Linkedin"
+                                                        >
+                                                            <img
+                                                                src="./static/linked-in.png"
+                                                                alt="Linkedin"
+                                                            />
+                                                        </a>
+                                                    </td>
+                                                    <td align="center">
+                                                        <a
+                                                            href="#"
+                                                            title="twitter"
+                                                        >
+                                                            <img
+                                                                src="./static/twitter.png"
+                                                                alt="twitter"
+                                                            />
+                                                        </a>
+                                                    </td>
+                                                    <td align="center">
+                                                        <a
+                                                            href="#"
+                                                            title="Medium"
+                                                        >
+                                                            <img
+                                                                src="./static/medium.png"
+                                                                alt="Medium"
+                                                            />
+                                                        </a>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td
+                                            class="copy-td"
+                                            style="
+                                                font-family: Arial, Helvetica,
+                                                    sans-serif, Verdana;
+                                            "
+                                        >
+                                            <p>
+                                                ©2021 Joshu. All rights
+                                                reserved.
+                                            </p>
+                                            <a href="#">Unsubscribe »</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </body>
 </html>
